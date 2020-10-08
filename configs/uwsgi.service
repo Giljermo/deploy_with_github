@@ -1,0 +1,12 @@
+[Unit]
+Description=uwsgi daemon
+After=network.target
+
+[Service]
+User=mas
+Group=www-data
+WorkingDirectory=/home/mas/myenv/deploy_with_github
+ExecStart=/home/mas/myenv/env/bin/uwsgi --ini configs/dwg_uwsgi.ini
+
+[Install]
+WantedBy=multi-user.target
