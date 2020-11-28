@@ -7,7 +7,7 @@ User=mas
 Group=www-data
 RuntimeDirectory=uwsgi
 WorkingDirectory=/home/mas/django_sites/deploy_with_github
-ExecStart=/home/mas/django_sites/env/bin/uwsgi --ini /home/mas/django_sites/deploy_with_github/configs/dwg_uwsgi.ini
+ExecStart=/home/mas/django_sites/env/bin/uwsgi --ini /home/mas/django_sites/deploy_with_github/configs/uwsgi.ini
 
 [Install]
 WantedBy=multi-user.target
